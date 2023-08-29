@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 import DS.implementations.QueueArray;
-import DS.implementations.StackArray;
 import DS.interfaces.Queue;
-import DS.interfaces.Stack;
 
 public class App {
     public static void main(String[] args) throws Exception {
