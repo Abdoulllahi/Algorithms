@@ -1,4 +1,5 @@
-import interfaces.Queue;
+package DS.implementations;
+import DS.interfaces.Queue;
 
 public class QueueLinkedList implements Queue{
 
@@ -21,7 +22,7 @@ public class QueueLinkedList implements Queue{
     }
 
     @Override
-    public void queue(Object ob) {
+    public void enqueue(Object ob) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'queue'");
     }
@@ -30,6 +31,18 @@ public class QueueLinkedList implements Queue{
     public Object dequeue() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'dequeue'");
+    }
+
+    @Override
+    public boolean isFull() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isFull'");
+    }
+
+    @Override
+    public void printQueue() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'printQueue'");
     }
     
 }

@@ -1,29 +1,35 @@
+
 import java.util.ArrayList;
 import java.util.HashSet;
+
 import java.util.List;
+
 import java.util.Set;
 
-import interfaces.Stack;
+import DS.implementations.QueueArray;
+import DS.implementations.StackArray;
+import DS.interfaces.Queue;
+import DS.interfaces.Stack;
 
 public class App {
     public static void main(String[] args) throws Exception {
         // System.out.println(gcd(48, 36));
         // System.out.println(Arrays.toString(merge(new int[] {1, 4, 5, 8, 17}, new int[] {2, 4, 8, 11, 13, 21, 23, 25})));
         // System.out.println(mc91(56));
-// 325641
-        Stack stack1 = new StackArray(6);
-        stack1.push(1);
-        stack1.push(2);
-        stack1.push(3);
-        stack1.pop();
-        stack1.pop();
-        stack1.push(4);
-        stack1.push(5);
-        stack1.pop();
-        stack1.push(6);
-        stack1.pop();
-        stack1.pop();
-        stack1.pop();
+        // 325641
+        // Stack stack1 = new StackArray(6);
+        // stack1.push(1);
+        // stack1.push(2);
+        // stack1.push(3);
+        // stack1.pop();
+        // stack1.pop();
+        // stack1.push(4);
+        // stack1.push(5);
+        // stack1.pop();
+        // stack1.push(6);
+        // stack1.pop();
+        // stack1.pop();
+        // stack1.pop();
 
         //154623
         // Stack stack2 = new StackArray(6);
@@ -40,6 +46,9 @@ public class App {
         // //cannot have 2 as ouput before 3
         // stack2.pop(); //3
         // stack2.pop(); //3
+        Queue queue = new QueueArray(5);
+        queue.enqueue(1);
+        queue.printQueue();
     }
 
     public static int gcd(int m, int n) {
@@ -124,5 +133,4 @@ public class App {
         }
         return mc91(mc91(n + 11));
     }
-
 }

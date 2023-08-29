@@ -1,4 +1,5 @@
-import interfaces.Stack;
+package DS.implementations;
+import DS.interfaces.Stack;
 
 public class StackArray implements Stack{
 

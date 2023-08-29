@@ -1,4 +1,4 @@
-package interfaces;
+package DS.interfaces;
 public interface Stack {
     public void push(Object object);
 
