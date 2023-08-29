@@ -48,7 +48,17 @@ public class App {
         // stack2.pop(); //3
         Queue queue = new QueueArray(5);
         queue.enqueue(1);
-        queue.printQueue();
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.enqueue(4);
+        queue.enqueue(5);
+        queue.enqueue(6);
+        queue.enqueue(7);
+        System.out.println(queue);
+        System.out.println(queue.dequeue());
+        System.out.println(queue);
+        queue.enqueue(1);
+        System.out.println(queue);
     }
 
     public static int gcd(int m, int n) {

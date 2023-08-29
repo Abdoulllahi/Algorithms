@@ -26,12 +26,13 @@ public class QueueArray implements Queue {
     @Override
     public void enqueue(Object object) {
         if (isEmpty()) {
-            this.queueArray[head] = object;
             head = tail = 0;
+            this.queueArray[head] = object;
             return;
         }
         if (isFull()) resize();
         tail = (tail + 1) % queueArray.length;
+        queueArray[tail] = object;
     }
 
     @Override
@@ -93,18 +94,26 @@ public class QueueArray implements Queue {
     }
 
     public void printQueue() {
-    if (isEmpty()) {
-        System.out.println("The queue is empty");
-        return;
+        System.out.println(toString());
     }
-    
-    int current = head;
-    while (current != tail) {
-        System.out.print(queueArray[current] + "-->");
-        current = (current + 1) % queueArray.length;
-    }
-    System.out.println(queueArray[tail]);
-}
 
+    @Override
+    public String toString() {
+        
+        if (isEmpty())
+            return "";
+        if (head == tail && head != -1) {
+            return "head: " + queueArray[head];
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append(queueArray[head]);
+        int current = head + 1;
+        while (current != tail) {
+            stringBuilder.append("-->").append(queueArray[current]);
+            current = (current + 1) % queueArray.length;
+        }
+        stringBuilder.append("-->" + queueArray[tail]);
+        return stringBuilder.toString();
+    }
     
 }
