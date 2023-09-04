@@ -78,6 +78,7 @@ public class QueueArray implements Queue {
     @Override
     public int size() {
         return tail - head + 1;
+        //TODO correct size method
     }
 
     public void resize() {

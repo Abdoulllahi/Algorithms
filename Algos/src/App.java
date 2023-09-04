@@ -57,6 +57,7 @@ public class App {
         System.out.println(queue);
         queue.enqueue(1);
         System.out.println(queue);
+        System.out.println(queue.size());
     }
 
     public static int gcd(int m, int n) {

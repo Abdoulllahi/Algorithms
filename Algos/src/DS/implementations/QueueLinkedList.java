@@ -38,11 +38,5 @@ public class QueueLinkedList implements Queue{
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isFull'");
     }
-
-    @Override
-    public void printQueue() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'printQueue'");
-    }
     
 }

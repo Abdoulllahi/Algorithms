@@ -13,6 +13,4 @@ public interface Queue {
     public boolean isFull();
 
     public int size();
-    
-    public void printQueue();
 }
