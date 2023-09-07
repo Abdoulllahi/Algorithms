@@ -7,6 +7,7 @@ public class IsSubsequence {
     }
 
     public static boolean isSubsequence(String s, String t) {
+        
         if (s.isEmpty()) {
             return true; // An empty string is always a subsequence
         }

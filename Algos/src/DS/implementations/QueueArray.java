@@ -6,6 +6,7 @@ public class QueueArray implements Queue {
     private int head;
     private int tail;
     private Object[] queueArray;
+    private int currentSize;
 
     public QueueArray(int length) {
 
@@ -14,6 +15,7 @@ public class QueueArray implements Queue {
         if (length <= 0) {
             this.queueArray = new Object[2];
         } else this.queueArray = new Object[length];
+        currentSize = 0;
     }
 
     public QueueArray(int length, int head) {
@@ -21,6 +23,7 @@ public class QueueArray implements Queue {
         this(length);
         this.head = 0;
         queueArray[head] = head;
+        currentSize = 1;
     }
 
     @Override
@@ -28,11 +31,13 @@ public class QueueArray implements Queue {
         if (isEmpty()) {
             head = tail = 0;
             this.queueArray[head] = object;
+            currentSize++;
             return;
         }
         if (isFull()) resize();
         tail = (tail + 1) % queueArray.length;
         queueArray[tail] = object;
+        currentSize++;
     }
 
     @Override
@@ -46,9 +51,11 @@ public class QueueArray implements Queue {
          Object dequeuedItem = queueArray[head];
         if (tail == 0 && head == 0) {
             tail = head = -1;
+            currentSize = 0;
             return queueArray[0];
         } else {
             head = (head + 1) % queueArray.length;
+            currentSize--;
         }
         return dequeuedItem;
     }
@@ -77,8 +84,7 @@ public class QueueArray implements Queue {
 
     @Override
     public int size() {
-        return tail - head + 1;
-        //TODO correct size method
+        return currentSize;
     }
 
     public void resize() {
