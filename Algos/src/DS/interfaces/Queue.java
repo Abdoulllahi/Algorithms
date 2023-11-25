@@ -1,12 +1,10 @@
 package DS.interfaces;
 
-public interface Queue {
+public interface Queue<E> {
     
-    public void enqueue(Object ob);
-
-	public Object dequeue();
-
-	public Object peek();
+    public void enqueue(E e);
+    public E dequeue();
+    public E peek();
 
     public boolean isEmpty();
     
