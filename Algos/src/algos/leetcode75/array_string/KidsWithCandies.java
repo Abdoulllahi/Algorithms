@@ -1,23 +1,27 @@
 package algos.leetcode75.array_string;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class KidsWithCandies {
-     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-    
-        int max = 0;
-        int len = candies.length;
-        Boolean[] result = new Boolean[len];
-
-        for (int i = 0; i < len; i++) {
-            int candy = candies[i];
-            max = candy > max ? candy : max;
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        List<Boolean> result = new ArrayList<>();
+        int maxCandies = maxArray(candies);
+        for (int candy: candies) {
+            if (candy + extraCandies >= maxCandies) result.add(true);
+            else result.add(false);
         }
 
-        for (int i = 0; i < len; i++) {
-            result[i] = candies[i] + extraCandies >= max ? true : false; 
+        return result;
+    }
+
+    public int maxArray(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        for (int num : nums) {
+            if (num > max) max = num;
         }
-        return Arrays.asList(result);
+
+        return max;
     }
 }
+

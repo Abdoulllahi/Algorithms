@@ -2,7 +2,7 @@ package algos.leetcode75.array_string;
 
 public class MergeStringAlternately {
     
-       public String mergeAlternately(String word1, String word2) {
+    public String mergeAlternately(String word1, String word2) {
         
         int length1 = word1.length();
         int length2 = word2.length();
@@ -17,7 +17,7 @@ public class MergeStringAlternately {
             finalWord.append(word1.charAt(i));
         }
 
-         for (int i = minLength; i < length2; i++) {
+        for (int i = minLength; i < length2; i++) {
             finalWord.append(word2.charAt(i));
         }
 

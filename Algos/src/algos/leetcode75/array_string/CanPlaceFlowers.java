@@ -2,7 +2,7 @@ package algos.leetcode75.array_string;
 
 public class CanPlaceFlowers {
     
-     public boolean canPlaceFlowers(int[] flowerbed, int n) {
+    public boolean canPlaceFlowers(int[] flowerbed, int n) {
         
         int len = flowerbed.length;
         int [] extendedFlowerbed = new int[len + 2];
