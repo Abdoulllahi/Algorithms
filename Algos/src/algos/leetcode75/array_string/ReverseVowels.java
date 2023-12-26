@@ -10,13 +10,13 @@ public class ReverseVowels {
         String vowels = "aeiouAEIOU";
 
         while (start < end) {
-            if (vowels.indexOf(letters[start]) == -1) {
+            while (start < end && vowels.indexOf(letters[start]) == -1) {
                 start++;
             }
-            if (vowels.indexOf(letters[end]) == -1) {
+            while (start < end && vowels.indexOf(letters[end]) == -1) {
                 end--;
             }
-            if (vowels.indexOf(letters[start]) != -1 && vowels.indexOf(letters[end]) != -1) {
+            if (start < end) {
                 char temp = letters[start];
                 letters[start] = letters[end];
                 letters[end] = temp;
