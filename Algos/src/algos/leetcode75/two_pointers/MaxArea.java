@@ -1,6 +1,6 @@
 package algos.leetcode75.two_pointers;
 
-public class maxArea {
+public class MaxArea {
     public int maxArea(int[] height) {
         int maxArea = 0;
         int left = 0;
