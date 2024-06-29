@@ -1,4 +1,4 @@
-package algos.blind75.twoSum;
+package algos.blind75.arraysAndHashing.twoSum;
 
 //Brute force
 public class Solution2 {

@@ -1,4 +1,4 @@
-package algos.blind75.groupAnagram;
+package algos.blind75.arraysAndHashing.groupAnagram;
 
 import java.util.*;
 

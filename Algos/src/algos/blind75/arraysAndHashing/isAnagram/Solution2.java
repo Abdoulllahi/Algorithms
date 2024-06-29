@@ -1,4 +1,4 @@
-package algos.blind75.isAnagram;
+package algos.blind75.arraysAndHashing.isAnagram;
 
 public class Solution2 {
 

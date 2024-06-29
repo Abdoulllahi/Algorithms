@@ -1,4 +1,4 @@
-package algos.blind75.isAnagram;
+package algos.blind75.arraysAndHashing.isAnagram;
 
 import java.util.Arrays;
 

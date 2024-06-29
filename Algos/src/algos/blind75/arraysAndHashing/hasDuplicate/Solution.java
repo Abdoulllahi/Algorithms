@@ -1,4 +1,4 @@
-package algos.blind75.hasDuplicate;
+package algos.blind75.arraysAndHashing.hasDuplicate;
 
 import java.util.HashSet;
 import java.util.Set;
