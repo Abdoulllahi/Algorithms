@@ -1,4 +1,4 @@
-package algos.blind75.twoPointers.isPalindrome.threeSum;
+package algos.blind75.twoPointers.threeSum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
