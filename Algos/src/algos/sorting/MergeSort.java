@@ -1,4 +1,4 @@
-package algos;
+package algos.sorting;
 import java.util.Arrays;
 
 public class MergeSort {

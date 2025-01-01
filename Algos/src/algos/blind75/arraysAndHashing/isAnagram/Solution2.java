@@ -14,4 +14,16 @@ public class Solution2 {
         }
         return true;
     }
+
+    public static void main(String[] args) {
+        Solution2 solution = new Solution2();
+
+        String s1 = "racecar";
+        String t1 = "carrace";
+        String s2 = "jar";
+        String t2 = "jam";
+
+        System.out.println(solution.isAnagram(s1, t1));
+        System.out.println(solution.isAnagram(s2, t2));
+    }
 }

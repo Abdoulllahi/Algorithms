@@ -1,4 +1,4 @@
-package algos;
+package algos.sorting;
 
 public class MergeSortVsMergeSortPlusTest {
     public static void main(String[] args) {

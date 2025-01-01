@@ -1,4 +1,4 @@
-package algos;
+package algos.sorting;
 public class DutchNationalFlag {
     static int[] arr = {};
 

@@ -1,4 +1,4 @@
-package algos;
+package algos.sorting;
 public class BubbleSort2 {
     static int[] arr = { };
 
