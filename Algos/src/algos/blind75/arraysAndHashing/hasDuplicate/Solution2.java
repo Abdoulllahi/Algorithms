@@ -4,10 +4,8 @@ import java.util.Arrays;
 
 public class Solution2 {
     public boolean containsDuplicate(int[] nums) {
-        // Step 1: Sort the array
         Arrays.sort(nums);
 
-        // Step 2: Check for adjacent duplicates
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] == nums[i - 1]) {
                 return true;
