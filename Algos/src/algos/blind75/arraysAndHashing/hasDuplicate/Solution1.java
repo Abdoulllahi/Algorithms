@@ -3,7 +3,7 @@ package algos.blind75.arraysAndHashing.hasDuplicate;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution {
+public class Solution1 {
 
     public boolean hasDuplicate(int[] nums) {
 
@@ -18,7 +18,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Solution1 solution = new Solution1();
 
         int[] nums1 = {1, 2, 3, 3};
         int[] nums2 = {1, 2, 3, 4};
